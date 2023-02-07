@@ -1,14 +1,13 @@
 import time
 
-
 def walk(walkcount):
-    cap        = "    👑"
-    head       = "    😎"
-    body       = "    👕🌹"
-    leg        = "    👖"
-    frontshoe  = "  👟   👞"
+    cap = "    👑"
+    head = "    😎"
+    body = "    👕🌹"
+    leg = "    👖"
+    frontshoe = "  👟   👞"
     middleshoe = "    👟"
-    backshoe   = "   👞 👟"
+    backshoe = "   👞 👟"
 
     for i in range(walkcount):
         if (i % 3 == 0):
@@ -35,9 +34,10 @@ def walk(walkcount):
 
     print(walkcount*" "+cap)
     print(walkcount*" "+head)
-    print(walkcount*" "+body+" I Love You!")
+    print(walkcount*" "+body+"I Love You!")
     print(walkcount*" "+leg)
     print(walkcount*" "+middleshoe)
 
+
 if __name__ == '__main__':
-    walk(60)
+    walk(18)
