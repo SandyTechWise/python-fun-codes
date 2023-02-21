@@ -19,10 +19,12 @@ driver.find_element_by_css_selector("._3FRCZ").click()
 time.sleep(2)
 
 # Types the message in the message box and hits the send button
-input_box = driver.find_element_by_xpath("//div[@class='_2A8P4']//div[@class='_1Plpp']")
+input_box = driver.find_element_by_xpath(
+    "//div[@class='_2A8P4']//div[@class='_1Plpp']")
 input_box.send_keys(message)
 time.sleep(2)
-driver.find_element_by_xpath("//button[@class='_35EW6']//span[@data-testid='send']").click()
+driver.find_element_by_xpath(
+    "//button[@class='_35EW6']//span[@data-testid='send']").click()
 time.sleep(2)
 
 print("Message sent successfully!")
